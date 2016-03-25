@@ -19,7 +19,7 @@
 	 -->
 		<!--默认是65535 64K 用于sql解析时最大文本长度 -->
 		<!--<property name="maxStringLiteralLength">65535</property>-->
-		<!--<property name="sequnceHandlerType">0</property>-->
+		<property name="sequnceHandlerType">1</property>
 		<!--<property name="backSocketNoDelay">1</property>-->
 		<!--<property name="frontSocketNoDelay">1</property>-->
 		<!--<property name="processorExecutor">16</property>-->
@@ -33,14 +33,15 @@
 	</system>
 	<user name="test">
 		<property name="password">test</property>
-		<property name="schemas">TESTDB</property>
+		<property name="schemas">paytest</property>
 	</user>
 
 	<user name="user">
 		<property name="password">user</property>
-		<property name="schemas">TESTDB</property>
+		<property name="schemas">paytest</property>
 		<property name="readOnly">true</property>
 	</user>
+	
 	<!-- 
 	<quarantine> 
 	   <whitehost>
